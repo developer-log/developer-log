@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--color-red-dark);
+  text-decoration: none;
+
+  &:hover {
+    @include base-transition;
+    color: var(--color-red-dark-hover);
+  }
+}
+
+@include theme-dark {
+  a {
+    color: var(--color-green-normal);
+    &:hover {
+      color: var(--color-green-normal-hover);
+    }
+  }
+}
