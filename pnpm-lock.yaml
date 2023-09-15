@@ -8,11 +8,17 @@ dependencies:
   astro:
     specifier: ^3.1.0
     version: 3.1.0(@types/node@20.6.1)(sass@1.67.0)
+  defu:
+    specifier: ^6.1.2
+    version: 6.1.2
 
 devDependencies:
   '@types/node':
     specifier: ^20.6.1
     version: 20.6.1
+  csstype:
+    specifier: ^3.1.2
+    version: 3.1.2
   sass:
     specifier: ^1.67.0
     version: 1.67.0
@@ -1225,6 +1231,10 @@ packages:
       which: 2.0.2
     dev: false
 
+  /csstype@3.1.2:
+    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+    dev: true
+
   /debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
     peerDependencies:
@@ -1280,6 +1290,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /defu@6.1.2:
+    resolution: {integrity: sha512-+uO4+qr7msjNNWKYPHqN/3+Dx3NFkmIzayk2L1MyZQlvgZb/J1A0fo410dpKrN2SnqFjt8n4JL8fDJE0wIgjFQ==}
+    dev: false
 
   /dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
