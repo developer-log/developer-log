@@ -1,11 +1,11 @@
 ---
-import defu from "defu";
+import defu from 'defu';
 
 interface Props {
-  theme?: "primary" | "secondary"
+  theme?: 'primary' | 'secondary'
 }
 
-const {theme} = defu(Astro.props, {theme: 'primary'});
+const { theme } = defu(Astro.props, { theme: 'primary' });
 ---
 
 <button

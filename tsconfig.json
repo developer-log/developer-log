@@ -2,15 +2,19 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "importsNotUsedAsValues": "error",
-
-    // Aliases
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"],
-      "~/*": ["./*"],
       "@ui": ["./src/components/UI/index.ts"],
       "@component/*": ["./src/components/*"],
       "@utility/*": ["./src/utils/*"]
     }
-  }
+  },
+  "include": [
+    "src",
+    "astro-shim.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

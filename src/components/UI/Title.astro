@@ -1,27 +1,27 @@
 ---
-import type {Properties as CSS} from "csstype";
+import type { Properties as CSS } from 'csstype';
 import compute from '@utility/compute';
 
 interface Props {
-  level?: "1" | "2" | "3";
+  level?: '1' | '2' | '3';
   fz?: string;
   wght?: string;
 }
 
 const properties = Astro.props;
 
-const preset: Record<NonNullable<Props["level"]>, CSS> = {
-  "1": {
-    fontSize: "var(--fz-title-h1)",
-    fontWeight: "800",
+const preset: Record<NonNullable<Props['level']>, CSS> = {
+  1: {
+    fontSize: 'var(--fz-title-h1)',
+    fontWeight: '800',
   },
-  "2": {
-    fontSize: "var(--fz-title-h2)",
-    fontWeight: "700",
+  2: {
+    fontSize: 'var(--fz-title-h2)',
+    fontWeight: '700',
   },
-  "3": {
-    fontSize: "var(--fz-title-h3)",
-    fontWeight: "600",
+  3: {
+    fontSize: 'var(--fz-title-h3)',
+    fontWeight: '600',
   }
 };
 
@@ -34,9 +34,9 @@ const styles = compute(() => {
       fontWeight: properties.wght,
     };
   } else {
-    return preset["1"];
+    return preset['1'];
   }
-})
+});
 ---
 
 <div

@@ -1,0 +1,17 @@
+---
+import navigation from '@/data/navigation';
+---
+
+<nav class="navigation">
+  <ul class="navigation__list">
+    {
+      navigation.map(item =>
+        <li class="navigation__item">
+          <a href={item.url} class="navigation__link">
+            { item.name }
+          </a>
+        </li>
+      )
+    }
+  </ul>
+</nav>
